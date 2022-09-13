@@ -52,7 +52,7 @@ for(i in 1:49){
 colnames(out1) <- c("TissueName", "meanZsq")
 write.csv(out1, "meanZsq-R2.csv", row.names = FALSE)
 ```
-# Getting Residuals for Brown's method and mean squared z-score adjusted with GTEx sample size
+# Getting residuals for Brown's method and mean squared z-score adjusted with GTEx sample size
 ```
 out1 <- data.frame()
 gtxSampleSize <- read.csv("GTEx-Sample-Size.csv", header = TRUE) #file contains the number of genotyped and RNA-seq samples for each of the 49 tissues
